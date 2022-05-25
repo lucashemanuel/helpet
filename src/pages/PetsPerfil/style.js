@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  flex: 2;
+  flex: 1;
   background-color: #ffffff;
 `;
 
@@ -42,14 +42,17 @@ export const Descricao = styled.Text`
   text-align: justify;
 `;
 
+export const Footer = styled.View`
+  align-items: center;
+  justify-content: space-evenly;
+`;
+
 export const Imagem = styled.Image`
-  margin-top: 15px;
-  margin-left: 40px;
+  margin-top: 25px;
+  margin-bottom: 20px;
 `;
 
 export const Botao = styled.TouchableOpacity`
-  margin-top: 20px;
-  margin-left: 95px;
   background-color: #f37a7a;
   align-items: center;
   justify-content: center;

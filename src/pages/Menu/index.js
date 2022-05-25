@@ -10,20 +10,24 @@ export default function Menu({ navigation }) {
           <Avatar source={require('../../images/usuario.jpg')}/>
           <Texto>Olá, Posso te ajudar?</Texto>
         </View>
-
-        <Funcoes>
-          <Adote activeOpacity={0.4} onPress={() => navigation.navigate('Pets')}>
+      </Header>
+      
+      <Funcoes>
+          <Adote activeOpacity={0.7} onPress={() => navigation.navigate('Pets')}>
             <Image source={require('../../images/adote.png')}/>
             <Texto2>Quero Adotar</Texto2>
           </Adote>
 
-          <Ajude activeOpacity={0.4} onPress={() => navigation.navigate('Ajude')}>
+          <Ajude activeOpacity={0.7} onPress={() => navigation.navigate('Ajude')}>
             <Image source={require('../../images/ajude.png')}/>
             <Texto2>Ajude a ONG</Texto2>
           </Ajude>
-        </Funcoes>
 
-      </Header>
+          <Adote activeOpacity={0.7} onPress={() => navigation.navigate('Pets')}>
+            <Image source={require('../../images/adote.png')}/>
+            <Texto2>Quero Adotar</Texto2>
+          </Adote>
+        </Funcoes>
 
     </Container>
   );

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Botao, Container, Descricao, Header, Imagem, Rolagem, Texto, Texto2, Titulo, View } from './style';
+import { Botao, Container, Descricao, Footer, Header, Imagem, Rolagem, Texto, Texto2, Titulo, View } from './style';
 import { FontAwesome } from '@expo/vector-icons';
 
 export default function PetsPerfil() {
@@ -25,9 +25,11 @@ export default function PetsPerfil() {
 
           <Titulo>ONG: Lar dos Anjos</Titulo>
 
-          <Imagem source={require('../../images/LardosAnjos.png')}/>
+          <Footer>
+            <Imagem source={require('../../images/LardosAnjos.png')}/>
+            <Botao activeOpacity={0.5}><Texto style={{color:'#ffffff'}}>Quero Adotar</Texto></Botao>
+          </Footer>
           
-          <Botao activeOpacity={0.5}><Texto style={{color:'#ffffff'}}>Quero Adotar</Texto></Botao>
         </View>
       </Rolagem>
     </Container>

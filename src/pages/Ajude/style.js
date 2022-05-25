@@ -5,11 +5,12 @@ export const Container = styled.View`
   background-color: #ffffff;
   margin-top: 50px;
   padding: 15px;
+  align-items: center;
 `;
 
 export const Titulo = styled.Text`
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 30px;
   font-size: 27px;
 `;
@@ -20,5 +21,5 @@ export const Texto = styled.Text`
 `;
 
 export const Imagem = styled.Image`
-  margin-left: 150px;
+  
 `;

@@ -3,59 +3,59 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   flex: 1;
   background-color: #ffffff;
+  
 `;
 export const View = styled.View`
   flex-direction: row;
-  padding-left: 20px;
-  margin-top: 100px;
+  justify-content: flex-start;
+  margin-left: 15px;
+  margin-top: 65px;
 `;
 
 export const Header = styled.ImageBackground`
   flex: 0.5;
-  position: static;
 `;
 
 export const Texto = styled.Text`
   font-size: 27px;
   color: #ffffff;
-  
 `;
 
 export const Avatar = styled.Image`
-  height: 110px;
-  width: 110px;
-  border-radius: 55px;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
   margin-right: 20px;
 `;
 
 export const Funcoes = styled.View`
+  flex: 0.5;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 300px;
-  
+  flex-wrap: wrap;
+  align-content: center;
+  align-content: space-around;
+  justify-content: space-evenly;
 `;
 
 export const Adote = styled.TouchableOpacity`
-  width: 170px;
-  height: 100px;
+  width: 165px;
+  height: 110px;
   border: 2px;
-  margin-right: 30px;
+  
   align-items: center;
   justify-content: center;
   border-radius: 10px;
 `;
 export const Ajude = styled.TouchableOpacity`
-  width: 170px;
-  height: 100px;
+  width: 165px;
+  height: 110px;
   border: 2px;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  
 `;
 export const Image = styled.Image`
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 `;
 
 export const Texto2 = styled.Text`

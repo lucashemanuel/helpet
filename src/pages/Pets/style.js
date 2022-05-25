@@ -8,8 +8,9 @@ export const Container = styled.View`
 export const Texto = styled.Text`
   color: #ffffff;
   font-size: 25px;
-  margin-left: 30px;
-  margin-top: 65px;
+  font-weight: bold;
+  margin-top: 45px;
+  margin-left: 20px;
 `;
 
 export const Area = styled.View`
@@ -18,28 +19,33 @@ export const Area = styled.View`
   margin-top: 70px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+  justify-content: center;
+  align-content: space-between;
 `;
 
 export const Bichos = styled.ImageBackground`
-  flex: 1;
-  border-radius: 20px;
-  margin-right: 5px;
-  margin-left: 32.5px;
   width: 180px;
   height: 210px;
-  padding: 15px;
   justify-content: flex-end;
+  padding: 15px;
 `;
 
 export const View = styled.View`
+  flex: 0.8;
   flex-direction: row;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  align-content: space-between;
 `;
 
 export const Texto2 = styled.Text`
   color: #ffffff;
   font-size: 20px;
+  
 `;
 
+export const Toque = styled.TouchableOpacity`
+`;
 
 

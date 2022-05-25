@@ -1,5 +1,5 @@
 import PetsPerfil from "../PetsPerfil";
-import { Area, Container, Texto, Bichos, View, Texto2 } from "./style";
+import { Area, Container, Texto, Bichos, View, Texto2, Toque } from "./style";
 
 export default function Pets({ navigation }) {
   return (
@@ -10,23 +10,31 @@ export default function Pets({ navigation }) {
       <Area>
 
         <View>
-          <Bichos source={require('../../images/dog1.jpg')} imageStyle={{ borderRadius: 15}}>
-            <Texto2 onPress={() => navigation.navigate(PetsPerfil)}>Flayka</Texto2>
-          </Bichos>
+          <Toque onPress={() => navigation.navigate(PetsPerfil)} activeOpacity={0.9}>
+            <Bichos source={require('../../images/dog1.jpg')} imageStyle={{ borderRadius: 15}}>
+              <Texto2>Flayka</Texto2>
+            </Bichos>
+          </Toque>
 
-          <Bichos source={require('../../images/dog2.jpg')} imageStyle={{ borderRadius: 15}}>
-            <Texto2>Alfred</Texto2>
-          </Bichos>
-        </View>
-        <View>
-          <Bichos source={require('../../images/dog3.jpg')} imageStyle={{ borderRadius: 15}}> 
-            <Texto2>Adele</Texto2>
-          </Bichos>
+          <Toque onPress={() => navigation.navigate(PetsPerfil)} activeOpacity={0.9}>
+            <Bichos source={require('../../images/dog2.jpg')} imageStyle={{ borderRadius: 15}}>
+              <Texto2>Alfred</Texto2>
+            </Bichos>
+          </Toque>  
+        
+          <Toque onPress={() => navigation.navigate(PetsPerfil)} activeOpacity={0.9}>
+            <Bichos source={require('../../images/dog3.jpg')} imageStyle={{ borderRadius: 15}}>
+              <Texto2>Adele</Texto2>
+            </Bichos>
+          </Toque>
 
-          <Bichos source={require('../../images/dog4.jpg')} imageStyle={{ borderRadius: 15}}>
-            <Texto2>Bob</Texto2>
-          </Bichos>
+          <Toque onPress={() => navigation.navigate(PetsPerfil)} activeOpacity={0.9}>
+            <Bichos source={require('../../images/dog4.jpg')} imageStyle={{ borderRadius: 15}}>
+              <Texto2>Bob</Texto2>
+            </Bichos>
+          </Toque>
         </View>
+
       </Area>
 
     </Container>
