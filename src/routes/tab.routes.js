@@ -25,7 +25,6 @@ export default function TabRoutes() {
          tabBarIcon:({color, size}) => (
            <FontAwesome5 name='clinic-medical' color={color} size={size}/>
         )}}/>
-
        
      </Tab.Navigator>
   )

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Avatar, Container, Funcoes, Header, Texto, View, Adote, Ajude, Image, Texto2 } from './style';
+import { Avatar, Container, Funcoes, Header, Texto, View, Adote, Ajude, Image, Texto2, Cadastre } from './style';
 
 export default function Menu({ navigation }) {
   return (
@@ -23,10 +23,10 @@ export default function Menu({ navigation }) {
             <Texto2>Ajude a ONG</Texto2>
           </Ajude>
 
-          <Adote activeOpacity={0.7} onPress={() => navigation.navigate('Pets')}>
-            <Image source={require('../../images/adote.png')}/>
-            <Texto2>Quero Adotar</Texto2>
-          </Adote>
+          <Cadastre activeOpacity={0.7} onPress={() => navigation.navigate('CadastraPet')}>
+            <Image source={require('../../images/cadastre.png')}/>
+            <Texto2>Cadastrar Pet</Texto2>
+          </Cadastre>
         </Funcoes>
 
     </Container>

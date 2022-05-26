@@ -29,7 +29,7 @@ export const Avatar = styled.Image`
 `;
 
 export const Funcoes = styled.View`
-  flex: 0.5;
+  flex: 0.4;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
@@ -41,7 +41,6 @@ export const Adote = styled.TouchableOpacity`
   width: 165px;
   height: 110px;
   border: 2px;
-  
   align-items: center;
   justify-content: center;
   border-radius: 10px;
@@ -54,6 +53,16 @@ export const Ajude = styled.TouchableOpacity`
   justify-content: center;
   border-radius: 10px;
 `;
+
+export const Cadastre = styled.TouchableOpacity`
+  width: 165px;
+  height: 110px;
+  border: 2px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+`;
+
 export const Image = styled.Image`
   margin-bottom: 8px;
 `;
