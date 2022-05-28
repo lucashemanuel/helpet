@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Avatar, Container, Funcoes, Header, Texto, View, Adote, Ajude, Image, Texto2, Cadastre } from './style';
+import { Avatar, Container, Card, Funcoes, Header, Texto, View, Image, Texto2 } from './style';
 
 export default function Menu({ navigation }) {
   return (
@@ -13,20 +13,20 @@ export default function Menu({ navigation }) {
       </Header>
       
       <Funcoes>
-          <Adote activeOpacity={0.7} onPress={() => navigation.navigate('Pets')}>
+          <Card activeOpacity={0.7} onPress={() => navigation.navigate('Pets')} style={{ shadowOffset: {width: 0, height: 2}, shadowColor: '#000000', shadowOpacity: 0.25, shadowRadius: 3.85, elevation: 10}}>
             <Image source={require('../../images/adote.png')}/>
             <Texto2>Quero Adotar</Texto2>
-          </Adote>
+          </Card>
 
-          <Ajude activeOpacity={0.7} onPress={() => navigation.navigate('Ajude')}>
+          <Card activeOpacity={0.7} onPress={() => navigation.navigate('Ajude')} style={{ shadowOffset: {width: 0, height: 2}, shadowColor: '#000000', shadowOpacity: 0.25, shadowRadius: 3.85, elevation: 10}}>
             <Image source={require('../../images/ajude.png')}/>
             <Texto2>Ajude a ONG</Texto2>
-          </Ajude>
+          </Card>
 
-          <Cadastre activeOpacity={0.7} onPress={() => navigation.navigate('CadastraPet')}>
+          <Card activeOpacity={0.7} onPress={() => navigation.navigate('CadastraPet')}style={{ shadowOffset: {width: 0, height: 2}, shadowColor: '#000000', shadowOpacity: 0.25, shadowRadius: 3.85, elevation: 10}}>
             <Image source={require('../../images/cadastre.png')}/>
             <Texto2>Cadastrar Pet</Texto2>
-          </Cadastre>
+          </Card>
         </Funcoes>
 
     </Container>

@@ -37,30 +37,14 @@ export const Funcoes = styled.View`
   justify-content: space-evenly;
 `;
 
-export const Adote = styled.TouchableOpacity`
+export const Card = styled.TouchableOpacity`
   width: 165px;
   height: 110px;
   border: 2px;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-`;
-export const Ajude = styled.TouchableOpacity`
-  width: 165px;
-  height: 110px;
-  border: 2px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-`;
-
-export const Cadastre = styled.TouchableOpacity`
-  width: 165px;
-  height: 110px;
-  border: 2px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
+  background-color: #ffffff;
 `;
 
 export const Image = styled.Image`

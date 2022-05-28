@@ -10,7 +10,7 @@ export default function Pets({ navigation }) {
       <Area>
 
         <View>
-          <Toque onPress={() => navigation.navigate(PetsPerfil)} activeOpacity={0.9}>
+          <Toque onPress={() => navigation.navigate(PetsPerfil)} activeOpacity={0.9} style={{ shadowOffset: {width: 0, height: 2}, shadowColor: '#000000', shadowOpacity: 0.25, shadowRadius: 3.85, elevation: 10}}>
             <Bichos source={require('../../images/dog1.jpg')} imageStyle={{ borderRadius: 15}}>
               <Texto2>Flayka</Texto2>
             </Bichos>
