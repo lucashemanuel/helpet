@@ -3,18 +3,17 @@ import { Botao, Container, Facebook, Footer, Form, Google, Icon, Input, Texto, T
 import { FontAwesome, FontAwesome5 } from "@expo/vector-icons";
 import { Keyboard, KeyboardAvoidingView, ScrollView, TouchableWithoutFeedback } from "react-native";
 
-export default function CadastraUsuario() {
-  const [username, setUsername] = useState('')
+export default function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
   function handleSignIn() {
-    if (username === '' || email === '' || password === '') {
+    if (email === '' || password === '') {
       alert("Preencha todos os campos!!!")
       return
     }
     const data = {
-      username, email, password
+      email, password
     }
     console.log(data)
   }
@@ -26,15 +25,10 @@ export default function CadastraUsuario() {
           <KeyboardAvoidingView>
 
 
-        <Texto>Inscreva-se</Texto>
-        <TextoHeader>Criar nova conta</TextoHeader>
+        <Texto>Seja bem-vindo!</Texto>
+        <TextoHeader>Faça o Login para continuar</TextoHeader>
         
           <Form>
-            <View>
-              <Icon><FontAwesome5 name="user-alt" size={20}/></Icon>
-              <Input onChangeText={setUsername} value={username} placeholder="Digite seu nome completo"/> 
-            </View>
-            
             <View>
               <Icon><FontAwesome name="envelope" size={20}/></Icon>
               <Input onChangeText={setEmail} value={email} keyboardType="email-address" placeholder="Digite seu email"/>
@@ -45,9 +39,9 @@ export default function CadastraUsuario() {
               <Input onChangeText={setPassword} value={password} secureTextEntry={true} placeholder="Digite sua senha"/>
             </View>
 
-            <Botao onPress={handleSignIn}><TextoBotao>Cadastrar</TextoBotao></Botao>
+            <Botao onPress={handleSignIn}><TextoBotao>Logar</TextoBotao></Botao>
             
-            <TextoFooter>OU FAÇA O CADASTRO COM</TextoFooter>
+            <TextoFooter>OU FAÇA O lOGIN COM</TextoFooter>
 
             <Footer>
               <Facebook> 
