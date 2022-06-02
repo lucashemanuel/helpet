@@ -28,15 +28,6 @@ export default function Menu({ navigation }) {
             <Texto2>Cadastrar Pet</Texto2>
           </Card>
 
-          <Card activeOpacity={0.7} onPress={() => navigation.navigate('CadastraUsuario')}style={{ shadowOffset: {width: 0, height: 2}, shadowColor: '#000000', shadowOpacity: 0.25, shadowRadius: 3.85, elevation: 10}}>
-            <Image source={require('../../images/cadastre.png')}/>
-            <Texto2>Cadastrar Usuário</Texto2>
-          </Card>
-
-          <Card activeOpacity={0.7} onPress={() => navigation.navigate('Login')}style={{ shadowOffset: {width: 0, height: 2}, shadowColor: '#000000', shadowOpacity: 0.25, shadowRadius: 3.85, elevation: 10}}>
-            <Image source={require('../../images/cadastre.png')}/>
-            <Texto2>Login</Texto2>
-          </Card>
         </Funcoes>
 
     </Container>
