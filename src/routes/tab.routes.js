@@ -10,7 +10,8 @@ export default function TabRoutes() {
   return (
      <Tab.Navigator screenOptions={{
        headerShown: false,
-       tabBarActiveTintColor:'#f37a7a' }}>
+       tabBarActiveTintColor:'#f37a7a'
+       }}>
 
        <Tab.Screen name='Menu' component={StackMenuRoute} 
        options={{

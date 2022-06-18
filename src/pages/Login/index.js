@@ -7,7 +7,7 @@ export default function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  function handleSignIn() {
+  function handleLogin() {
     if (email === '' || password === '') {
       alert("Preencha todos os campos!!!")
       return
@@ -39,7 +39,7 @@ export default function Login() {
               <Input onChangeText={setPassword} value={password} secureTextEntry={true} placeholder="Digite sua senha"/>
             </View>
 
-            <Botao onPress={handleSignIn}><TextoBotao>Logar</TextoBotao></Botao>
+            <Botao onPress={handleLogin}><TextoBotao>Logar</TextoBotao></Botao>
             
             <TextoFooter>OU FAÇA O lOGIN COM</TextoFooter>
 

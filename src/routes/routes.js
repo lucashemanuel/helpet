@@ -5,9 +5,9 @@ import { StatusBar } from 'react-native';
 
 export default function Routes() {
   return (
-     <NavigationContainer>
+     <NavigationContainer >
        <StatusBar barStyle='light-content'/>
-       <TabRoutes/>
+       <TabRoutes />
      </NavigationContainer>
   )
 }
